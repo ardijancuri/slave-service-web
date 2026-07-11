@@ -1,5 +1,12 @@
 import "../styles.css";
 import { IBM_Plex_Sans, Roboto_Condensed } from "next/font/google";
+import { LanguageProvider } from "../components/LanguageProvider";
+import {
+  RouteEffects,
+  SiteFooter,
+  SiteHeader,
+  SkipLink,
+} from "../components/SiteChrome";
 
 const bodyFont = IBM_Plex_Sans({
   variable: "--font-body",
@@ -17,7 +24,10 @@ const displayFont = Roboto_Condensed({
 
 export const metadata = {
   metadataBase: new URL("https://www.dizelservisslave.com.mk"),
-  title: "Дизел Сервис Славе — Скопје",
+  title: {
+    default: "Дизел Сервис Славе — Скопје",
+    template: "%s | Дизел Сервис Славе",
+  },
   description:
     "Дизел Сервис Славе — специјализиран сервис за BOSCH пумпи, инјектори и common rail системи во Скопје.",
   icons: { icon: "/favicon.svg" },
@@ -37,7 +47,13 @@ export default function RootLayout({ children }) {
         className={`${bodyFont.variable} ${displayFont.variable}`}
         suppressHydrationWarning
       >
-        {children}
+        <LanguageProvider>
+          <SkipLink />
+          <SiteHeader />
+          <RouteEffects />
+          {children}
+          <SiteFooter />
+        </LanguageProvider>
       </body>
     </html>
   );
