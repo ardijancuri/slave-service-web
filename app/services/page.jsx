@@ -1,10 +1,20 @@
 "use client";
 
 import Link from "next/link";
+import {
+  FaClipboardCheck,
+  FaMagnifyingGlassChart,
+  FaScrewdriverWrench,
+} from "react-icons/fa6";
 import PageHero from "../../components/PageHero";
 import { useLanguage } from "../../components/LanguageProvider";
 
 const serviceItems = [1, 2, 3, 4, 5, 6];
+const processSteps = [
+  { number: 1, Icon: FaMagnifyingGlassChart },
+  { number: 2, Icon: FaScrewdriverWrench },
+  { number: 3, Icon: FaClipboardCheck },
+];
 
 export default function ServicesPage() {
   const { t } = useLanguage();
@@ -51,9 +61,12 @@ export default function ServicesPage() {
           <p>{t.processLead}</p>
         </div>
         <div className="process-list">
-          {[1, 2, 3].map((number) => (
+          {processSteps.map(({ number, Icon }) => (
             <article className="process-step reveal" key={number}>
-              <span>0{number}</span>
+              <div className="process-step-meta">
+                <span className="process-number">0{number}</span>
+                <Icon className="process-icon" aria-hidden="true" />
+              </div>
               <h3>{t[`process${number}Title`]}</h3>
               <p>{t[`process${number}Text`]}</p>
             </article>

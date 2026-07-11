@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { FaFacebookF, FaInstagram } from "react-icons/fa6";
 import { useLanguage } from "./LanguageProvider";
 
 const navigation = [
@@ -11,6 +12,11 @@ const navigation = [
   { href: "/equipment", key: "navEquipment" },
   { href: "/gallery", key: "navGallery" },
   { href: "/contact", key: "navContact" },
+];
+
+const socialLinks = [
+  { label: "Facebook", href: "", Icon: FaFacebookF },
+  { label: "Instagram", href: "", Icon: FaInstagram },
 ];
 
 function Brand({ footer = false }) {
@@ -42,6 +48,31 @@ export function SkipLink() {
   );
 }
 
+export function SocialLinks({ variant = "dark", presentation = "icons" }) {
+  const { t } = useLanguage();
+  return (
+    <div
+      className={`social-links social-links-${variant} social-links-${presentation}`}
+      aria-label={t.socialMedia}
+    >
+      {socialLinks.map(({ label, href, Icon }) => (
+        <a
+          className="social-link"
+          href={href || undefined}
+          aria-label={label}
+          aria-disabled={!href}
+          tabIndex={href ? 0 : -1}
+          title={`${label} — ${t.comingSoon}`}
+          key={label}
+        >
+          <Icon aria-hidden="true" />
+          {presentation === "buttons" && <span>{label}</span>}
+        </a>
+      ))}
+    </div>
+  );
+}
+
 export function SiteHeader() {
   const pathname = usePathname();
   const normalizedPathname =
@@ -61,6 +92,24 @@ export function SiteHeader() {
     document.body.classList.toggle("nav-open", menuOpen);
     return () => document.body.classList.remove("nav-open");
   }, [menuOpen]);
+
+  useEffect(() => {
+    if (!menuOpen) return undefined;
+    const closeOnEscape = (event) => {
+      if (event.key === "Escape") setMenuOpen(false);
+    };
+    window.addEventListener("keydown", closeOnEscape);
+    return () => window.removeEventListener("keydown", closeOnEscape);
+  }, [menuOpen]);
+
+  useEffect(() => {
+    const desktopQuery = window.matchMedia("(min-width: 821px)");
+    const closeOnDesktop = (event) => {
+      if (event.matches) setMenuOpen(false);
+    };
+    desktopQuery.addEventListener("change", closeOnDesktop);
+    return () => desktopQuery.removeEventListener("change", closeOnDesktop);
+  }, []);
 
   useEffect(() => {
     const timer = window.setTimeout(() => setMenuOpen(false), 0);
@@ -135,9 +184,12 @@ export function SiteFooter() {
     <footer className="site-footer">
       <Brand footer />
       <p>© 2026 {t.footerRights}</p>
-      <Link href="/contact">
-        {t.navContact} <span aria-hidden="true">↗</span>
-      </Link>
+      <div className="footer-actions">
+        <Link className="footer-contact-link" href="/contact">
+          {t.navContact} <span aria-hidden="true">↗</span>
+        </Link>
+        <SocialLinks />
+      </div>
     </footer>
   );
 }

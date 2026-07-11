@@ -2,6 +2,7 @@
 
 import PageHero from "../../components/PageHero";
 import { useLanguage } from "../../components/LanguageProvider";
+import { SocialLinks } from "../../components/SiteChrome";
 
 const mapsUrl =
   "https://www.google.com/maps/search/?api=1&query=2G22%2BHVM%20Disel%20Service%20Slave%2C%20%C4%8Cento";
@@ -52,6 +53,10 @@ export default function ContactPage() {
           <div className="contact-row">
             <span>{t.landmarkLabel}</span>
             <p>{t.landmark}</p>
+          </div>
+          <div className="contact-row">
+            <span>{t.socialMedia}</span>
+            <SocialLinks variant="light" />
           </div>
         </div>
       </section>

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 import { useLanguage } from "../components/LanguageProvider";
+import { SocialLinks } from "../components/SiteChrome";
 
 const pageLinks = [
   ["01", "/services", "navServices", "homeServicesDescription"],
@@ -135,7 +136,11 @@ export default function Home() {
           </h2>
         </div>
         <div className="home-contact-actions reveal">
-          <a className="button button-light" href="tel:+38970476287">
+          <div className="home-contact-socials">
+            <span>{t.socialMedia}</span>
+            <SocialLinks presentation="buttons" />
+          </div>
+          <a className="button button-primary home-contact-phone" href="tel:+38970476287">
             <span>+389 70 476 287</span>
             <span aria-hidden="true">↗</span>
           </a>
