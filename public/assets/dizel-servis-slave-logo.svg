@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="title">
+  <title id="title">&#1044;&#1080;&#1079;&#1077;&#1083; &#1057;&#1077;&#1088;&#1074;&#1080;&#1089; &#1057;&#1083;&#1072;&#1074;&#1077;</title>
+  <rect width="1000" height="1000" fill="#ffffff"/>
+  <g transform="translate(196 388)">
+    <g transform="skewX(-12)" fill="#df3f28">
+      <rect x="0" y="78" width="44" height="102"/>
+      <rect x="70" y="0" width="44" height="180"/>
+      <rect x="140" y="40" width="44" height="140"/>
+    </g>
+    <g transform="translate(236 13)" fill="#121414" font-family="Arial, Helvetica, sans-serif">
+      <text x="0" y="56" font-size="41" font-weight="700" letter-spacing="8">&#1044;&#1048;&#1047;&#1045;&#1051; &#1057;&#1045;&#1056;&#1042;&#1048;&#1057;</text>
+      <text x="0" y="153" font-size="108" font-weight="800" letter-spacing="-3">&#1057;&#1051;&#1040;&#1042;&#1045;</text>
+    </g>
+  </g>
+</svg>

@@ -183,7 +183,16 @@ export function SiteFooter() {
   return (
     <footer className="site-footer">
       <Brand footer />
-      <p>© 2026 {t.footerRights}</p>
+      <p>
+        © 2026 {t.footerRights}
+        <span className="footer-credit">
+          {t.footerDevelopedBy}{" "}
+          <a href="https://oninova.net" target="_blank" rel="noreferrer">
+            ONINOVA
+          </a>
+          .
+        </span>
+      </p>
       <div className="footer-actions">
         <Link className="footer-contact-link" href="/contact">
           {t.navContact} <span aria-hidden="true">↗</span>

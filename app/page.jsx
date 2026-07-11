@@ -64,10 +64,6 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="hero-index" aria-hidden="true">
-          <span>42.0007° N</span>
-          <span>21.5017° E</span>
-        </div>
       </section>
 
       <section className="proof" aria-label={t.homeProofLabel}>
@@ -108,8 +104,8 @@ export default function Home() {
       <section className="about section home-about">
         <div className="about-photo reveal">
           <Image
-            src="/assets/hq/slide3-hq.jpg"
-            alt={t.workbenchAlt}
+            src="/assets/hq/homepage-experience.jpg"
+            alt={t.homeExperienceImageAlt}
             fill
             sizes="(max-width: 820px) 100vw, 55vw"
           />
