@@ -6,14 +6,14 @@ import PageHero from "../../components/PageHero";
 import { useLanguage } from "../../components/LanguageProvider";
 
 const images = [
-  ["galery4.jpg", "gallery1", "KOMTEST CR1100"],
-  ["galery2.jpg", "gallery2", "galleryAlt2"],
-  ["galery3.jpg", "gallery3", "galleryAlt3"],
-  ["galery1.jpg", "gallery4", "galleryAlt4"],
-  ["komtest1.jpg", "gallery5", "equipmentAlt"],
-  ["komtest2.jpg", "gallery6", "galleryAlt2"],
-  ["komtest3.jpg", "gallery7", "equipmentAlt"],
-  ["servis2.jpg", "gallery8", "workbenchAlt"],
+  ["galery4-hq.jpg", "gallery1", "KOMTEST CR1100", 1511, 1041],
+  ["galery2-hq.jpg", "gallery2", "galleryAlt2", 1510, 1042],
+  ["galery3-hq.jpg", "gallery3", "galleryAlt3", 1512, 1040],
+  ["galery1-hq.jpg", "gallery4", "galleryAlt4", 1512, 1040],
+  ["komtest1-hq.jpg", "gallery5", "equipmentAlt", 1254, 1254],
+  ["komtest2-hq.jpg", "gallery6", "galleryAlt2", 1254, 1254],
+  ["komtest3-hq.jpg", "gallery7", "equipmentAlt", 1254, 1254],
+  ["servis2-hq.jpg", "gallery8", "workbenchAlt", 1592, 988],
 ];
 
 export default function GalleryPage() {
@@ -24,7 +24,7 @@ export default function GalleryPage() {
         eyebrow={t.galleryPageEyebrow}
         title={t.galleryPageTitle}
         lead={t.galleryPageLead}
-        image="/assets/slide3.jpg"
+        image="/assets/hq/slide3-hq.jpg"
         alt={t.workbenchAlt}
         index="04"
       />
@@ -36,13 +36,13 @@ export default function GalleryPage() {
       </section>
 
       <section className="gallery-wall section">
-        {images.map(([src, captionKey, altKey], index) => (
+        {images.map(([src, captionKey, altKey, width, height], index) => (
           <figure className="gallery-wall-item reveal" key={src}>
             <Image
-              src={`/assets/${src}`}
+              src={`/assets/hq/${src}`}
               alt={t[altKey] || altKey}
-              width={index < 4 ? 270 : 190}
-              height={index < 4 ? 186 : 190}
+              width={width}
+              height={height}
               sizes="(max-width: 620px) 100vw, 50vw"
             />
             <figcaption>

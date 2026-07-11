@@ -37,7 +37,7 @@ export default function Home() {
         <div className="hero-media" aria-hidden="true">
           <Image
             ref={heroImageRef}
-            src="/assets/slide2.jpg"
+            src="/assets/hq/slide2-hq.jpg"
             alt=""
             fill
             priority
@@ -108,7 +108,7 @@ export default function Home() {
       <section className="about section home-about">
         <div className="about-photo reveal">
           <Image
-            src="/assets/slide3.jpg"
+            src="/assets/hq/slide3-hq.jpg"
             alt={t.workbenchAlt}
             fill
             sizes="(max-width: 820px) 100vw, 55vw"

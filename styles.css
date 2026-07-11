@@ -265,7 +265,7 @@ blockquote { margin: 3rem 0 0; padding: 1.5rem 0 0 2rem; border-top: 1px solid v
 .page-cta-action { display: grid; gap: 2rem; justify-items: start; }
 .page-cta-action > p { max-width: 340px; padding-top: 1rem; border-top: 4px solid var(--red); font-family: var(--display); text-transform: uppercase; }
 
-.story-layout { display: grid; grid-template-columns: 1fr .8fr; gap: clamp(4rem, 10vw, 12rem); align-items: center; }
+.story-layout { display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(3rem, 7vw, 8rem); align-items: center; }
 .story-copy h2, .values-section h2, .equipment-detail h2, .equipment-proof h2, .gallery-page-intro h2, .contact-page h2, .location-section h2 { margin: 0; font-family: var(--display); font-size: clamp(3.1rem, 5.4vw, 5.9rem); line-height: .9; letter-spacing: -.04em; text-transform: uppercase; }
 .large-copy { margin: 2.4rem 0 1.2rem; font-size: 1.2rem; }
 .story-copy > p:last-child { color: var(--muted); }
@@ -297,9 +297,9 @@ blockquote { margin: 3rem 0 0; padding: 1.5rem 0 0 2rem; border-top: 1px solid v
 
 .gallery-page-intro { display: grid; grid-template-columns: .35fr 1fr .65fr; gap: 4rem; align-items: start; }
 .gallery-page-intro > p:last-child { color: var(--muted); }
-.gallery-wall { display: grid; grid-template-columns: 1.15fr .85fr; gap: 5rem 1.5rem; padding-top: 1rem; }
+.gallery-wall { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem 1.5rem; padding-top: 1rem; }
 .gallery-wall-item { margin: 0; }
-.gallery-wall-item:nth-child(4n+2), .gallery-wall-item:nth-child(4n+3) { width: 76%; }
+.gallery-wall-item:nth-child(4n+2), .gallery-wall-item:nth-child(4n+3) { width: 90%; }
 .gallery-wall-item:nth-child(4n+2) { justify-self: end; }
 .gallery-wall-item img { width: 100%; aspect-ratio: 1.35; object-fit: cover; filter: saturate(.72) contrast(1.06); transition: filter 220ms ease, transform 350ms ease; }
 .gallery-wall-item:nth-child(3n) img { aspect-ratio: 1/1; }
@@ -433,7 +433,7 @@ blockquote { margin: 3rem 0 0; padding: 1.5rem 0 0 2rem; border-top: 1px solid v
   .page-intro h2, .story-copy h2, .values-section h2, .equipment-detail h2, .equipment-proof h2, .gallery-page-intro h2, .contact-page h2, .location-section h2, .page-cta h2, .simple-cta h2 { max-width: 100%; font-size: clamp(2.3rem, 10.5vw, 3.25rem); line-height: .94; overflow-wrap: break-word; }
   .mission-quote { max-width: 100%; font-size: clamp(2.3rem, 10.5vw, 3.3rem); line-height: .98; overflow-wrap: break-word; }
   .gallery-wall { grid-template-columns: 1fr; }
-  .gallery-wall-item:nth-child(4n+2), .gallery-wall-item:nth-child(4n+3) { width: 86%; }
+  .gallery-wall-item:nth-child(4n+2), .gallery-wall-item:nth-child(4n+3) { width: 100%; }
   .gallery-wall-item:nth-child(4n+3) { justify-self: end; }
   .contact-page .contact-row { grid-template-columns: 72px 1fr; }
 }

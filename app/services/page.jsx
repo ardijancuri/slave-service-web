@@ -24,7 +24,7 @@ export default function ServicesPage() {
         eyebrow={t.servicesPageEyebrow}
         title={t.servicesPageTitle}
         lead={t.servicesPageLead}
-        image="/assets/slide3.jpg"
+        image="/assets/hq/slide3-hq.jpg"
         alt={t.workbenchAlt}
         index="01"
       />
