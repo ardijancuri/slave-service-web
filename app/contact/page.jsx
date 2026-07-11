@@ -1,8 +1,12 @@
 "use client";
 
-import Image from "next/image";
 import PageHero from "../../components/PageHero";
 import { useLanguage } from "../../components/LanguageProvider";
+
+const mapsUrl =
+  "https://www.google.com/maps/search/?api=1&query=2G22%2BHVM%20Disel%20Service%20Slave%2C%20%C4%8Cento";
+const mapsEmbedUrl =
+  "https://maps.google.com/maps?q=2G22%2BHVM%20Disel%20Service%20Slave%2C%20%C4%8Cento&output=embed";
 
 export default function ContactPage() {
   const { t } = useLanguage();
@@ -30,11 +34,10 @@ export default function ContactPage() {
         <div className="contact-details contact-details-light reveal">
           <div className="contact-row">
             <span>{t.addressLabel}</span>
-            <p>
-              {t.addressA}
-              <br />
-              {t.addressB}
-            </p>
+            <a href={mapsUrl} target="_blank" rel="noreferrer">
+              <span>{t.addressValue}</span>
+              <span aria-hidden="true">↗</span>
+            </a>
           </div>
           <div className="contact-row">
             <span>{t.emailLabel}</span>
@@ -54,23 +57,22 @@ export default function ContactPage() {
       </section>
 
       <section className="location-section section-dark">
-        <div className="location-photo reveal">
-          <Image
-            src="/assets/servisslave.jpg"
-            alt={t.workshopExteriorAlt}
-            width={200}
-            height={265}
-            sizes="(max-width: 820px) 100vw, 42vw"
+        <div className="map-embed reveal">
+          <iframe
+            src={mapsEmbedUrl}
+            title={t.mapTitle}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            allowFullScreen
           />
         </div>
         <div className="location-copy reveal">
           <p className="eyebrow light">{t.locationLabel}</p>
-          <p className="coordinates">42.000670<br />21.501745</p>
           <h2>{t.locationTitle}</h2>
           <p>{t.locationText}</p>
           <a
             className="button button-light"
-            href="https://www.google.com/maps?q=42.000670,21.501745"
+            href={mapsUrl}
             target="_blank"
             rel="noreferrer"
           >

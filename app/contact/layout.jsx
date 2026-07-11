@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Контакт",
   description:
-    "Контакт, адреса и точна локација за Дизел Сервис Славе во Маџари, Скопје.",
+    "Контакт, Plus Code и точна локација за Дизел Сервис Славе во Ченто, Скопје.",
 };
 
 export default function ContactLayout({ children }) {
