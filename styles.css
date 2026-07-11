@@ -271,7 +271,7 @@ blockquote { margin: 3rem 0 0; padding: 1.5rem 0 0 2rem; border-top: 1px solid v
 .large-copy { margin: 2.4rem 0 1.2rem; font-size: 1.2rem; }
 .story-copy > p:last-child { color: var(--muted); }
 .story-image { margin: 0; }
-.story-image img { width: 100%; aspect-ratio: 4/5; object-fit: cover; filter: saturate(.7) contrast(1.08); }
+.story-image img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; filter: saturate(.7) contrast(1.08); }
 .story-image figcaption { padding-top: .8rem; border-top: 1px solid var(--ink); margin-top: .8rem; color: var(--muted); font-size: .72rem; text-transform: uppercase; }
 .mission-section { display: grid; grid-template-columns: .35fr 1.65fr; gap: 4rem; padding: clamp(6rem, 10vw, 10rem) var(--gutter); }
 .mission-label > span { color: var(--red); font-family: var(--display); }
