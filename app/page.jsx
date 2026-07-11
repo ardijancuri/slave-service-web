@@ -37,7 +37,7 @@ export default function Home() {
         <div className="hero-media" aria-hidden="true">
           <Image
             ref={heroImageRef}
-            src="/assets/hq/dizel-servis-slave-hero.jpg"
+            src="/assets/hq/services-hero.jpg"
             alt=""
             fill
             priority
