@@ -15,7 +15,11 @@ const navigation = [
 ];
 
 const socialLinks = [
-  { label: "Facebook", href: "", Icon: FaFacebookF },
+  {
+    label: "Facebook",
+    href: "https://www.facebook.com/share/1AiRnJySL4/?mibextid=wwXIfr",
+    Icon: FaFacebookF,
+  },
   { label: "Instagram", href: "", Icon: FaInstagram },
 ];
 
@@ -59,10 +63,12 @@ export function SocialLinks({ variant = "dark", presentation = "icons" }) {
         <a
           className="social-link"
           href={href || undefined}
+          target={href ? "_blank" : undefined}
+          rel={href ? "noreferrer" : undefined}
           aria-label={label}
           aria-disabled={!href}
           tabIndex={href ? 0 : -1}
-          title={`${label} — ${t.comingSoon}`}
+          title={href ? label : `${label} — ${t.comingSoon}`}
           key={label}
         >
           <Icon aria-hidden="true" />

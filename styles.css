@@ -206,7 +206,7 @@ blockquote { margin: 3rem 0 0; padding: 1.5rem 0 0 2rem; border-top: 1px solid v
 .social-link[href]:hover { color: #fff; border-color: var(--red); background: var(--red); }
 .social-link[aria-disabled="true"] { opacity: .42; cursor: default; }
 .social-links-buttons { width: min(100%, 310px); display: grid; grid-template-columns: 1fr; gap: .7rem; }
-.social-links-buttons .social-link { width: 100%; min-height: 52px; height: auto; display: flex; align-items: center; justify-content: flex-start; gap: .85rem; padding: .9rem 1.1rem; border: 0; border-radius: 0; background: var(--red); color: #fff; font-family: var(--display); font-size: .82rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.social-links-buttons .social-link { width: 100%; min-height: 52px; height: auto; display: flex; align-items: center; justify-content: flex-start; gap: .85rem; padding: .9rem 1.1rem; border: 0; border-radius: 0; background: #fff; color: var(--ink); font-family: var(--display); font-size: .82rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .social-links-buttons .social-link svg { flex: 0 0 auto; }
 .social-links-buttons .social-link[aria-disabled="true"] { opacity: 1; }
 .footer-brand { color: #fff; }
@@ -242,9 +242,11 @@ blockquote { margin: 3rem 0 0; padding: 1.5rem 0 0 2rem; border-top: 1px solid v
 .home-contact { align-items: end; padding: clamp(6rem, 10vw, 10rem) var(--gutter); }
 .home-contact-actions { width: min(100%, 420px); align-self: end; display: grid; justify-items: start; gap: 1.2rem; }
 .home-contact-actions .text-link { color: #fff; }
-.home-contact-phone { width: min(100%, 310px); }
+.home-contact-phones { width: min(100%, 310px); display: grid; gap: .8rem; }
+.home-contact-phone { width: 100%; }
+.home-contact-phones .button { margin-top: 0; }
 .home-contact-socials { width: 100%; display: grid; gap: .8rem; }
-.home-contact-socials > span { color: rgba(255,255,255,.52); font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; }
+.home-contact-label { color: rgba(255,255,255,.52); font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; }
 
 .page-intro { display: grid; grid-template-columns: .3fr 1.25fr .65fr; gap: clamp(2rem, 5vw, 6rem); align-items: start; }
 .page-intro h2 { margin: 0; font-family: var(--display); font-size: clamp(3.2rem, 5.6vw, 6rem); line-height: .9; letter-spacing: -.04em; text-transform: uppercase; }
@@ -312,6 +314,10 @@ blockquote { margin: 3rem 0 0; padding: 1.5rem 0 0 2rem; border-top: 1px solid v
 .contact-page { display: grid; grid-template-columns: 1fr .9fr; gap: clamp(4rem, 10vw, 12rem); align-items: end; }
 .contact-page-intro > p:not(.eyebrow) { max-width: 570px; color: var(--muted); }
 .contact-page-intro .button { margin-top: 2rem; }
+.contact-phone-actions { display: grid; justify-items: start; gap: .7rem; margin-top: 2rem; }
+.contact-page-intro .contact-phone-actions .button { margin-top: 0; }
+.contact-phone-list { display: grid; gap: .55rem; }
+.contact-phone-list a { display: flex; justify-content: space-between; gap: 1rem; }
 .contact-details-light { color: var(--ink); border-top-color: var(--line); }
 .contact-details-light .contact-row { border-bottom-color: var(--line); }
 .contact-details-light .contact-row > span { color: var(--muted); }

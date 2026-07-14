@@ -133,13 +133,20 @@ export default function Home() {
         </div>
         <div className="home-contact-actions reveal">
           <div className="home-contact-socials">
-            <span>{t.socialMedia}</span>
+            <span className="home-contact-label">{t.socialMedia}</span>
             <SocialLinks presentation="buttons" />
           </div>
-          <a className="button button-primary home-contact-phone" href="tel:+38970476287">
-            <span>+389 70 476 287</span>
-            <span aria-hidden="true">↗</span>
-          </a>
+          <div className="home-contact-phones">
+            <span className="home-contact-label">{t.phoneLabel}</span>
+            <a className="button button-primary home-contact-phone" href="tel:+38970476287">
+              <span>+389 70 476 287</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a className="button button-primary home-contact-phone" href="tel:+38971398355">
+              <span>+389 71 398 355</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
           <Link className="text-link" href="/contact">
             {t.allContactDetails} <span aria-hidden="true">→</span>
           </Link>

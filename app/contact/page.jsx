@@ -27,10 +27,16 @@ export default function ContactPage() {
           <p className="eyebrow">{t.contactEyebrow}</p>
           <h2>{t.contactIntroTitle}</h2>
           <p>{t.contactIntroText}</p>
-          <a className="button button-primary" href="tel:+38970476287">
-            <span>+389 70 476 287</span>
-            <span aria-hidden="true">↗</span>
-          </a>
+          <div className="contact-phone-actions">
+            <a className="button button-primary" href="tel:+38970476287">
+              <span>+389 70 476 287</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a className="button button-primary" href="tel:+38971398355">
+              <span>+389 71 398 355</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
         </div>
         <div className="contact-details contact-details-light reveal">
           <div className="contact-row">
@@ -48,11 +54,16 @@ export default function ContactPage() {
           </div>
           <div className="contact-row">
             <span>{t.phoneLabel}</span>
-            <a href="tel:+38970476287">+389 70 476 287</a>
-          </div>
-          <div className="contact-row">
-            <span>{t.landmarkLabel}</span>
-            <p>{t.landmark}</p>
+            <div className="contact-phone-list">
+              <a href="tel:+38970476287">
+                <span>+389 70 476 287</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+              <a href="tel:+38971398355">
+                <span>+389 71 398 355</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
           </div>
           <div className="contact-row">
             <span>{t.socialMedia}</span>
