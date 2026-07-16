@@ -13,7 +13,7 @@ export default function AboutPage() {
         eyebrow={t.aboutPageEyebrow}
         title={t.aboutPageTitle}
         lead={t.aboutPageLead}
-        image="/assets/workshop/home-hero.webp"
+        image="/assets/workshop/about-hero-clean.webp"
         alt={t.aboutHeroAlt}
         index="02"
       />

@@ -37,7 +37,7 @@ export default function Home() {
         <div className="hero-media" aria-hidden="true">
           <Image
             ref={heroImageRef}
-            src="/assets/workshop/home-hero.webp"
+            src="/assets/hq/services-hero.jpg"
             alt=""
             fill
             priority
