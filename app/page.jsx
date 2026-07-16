@@ -37,7 +37,7 @@ export default function Home() {
         <div className="hero-media" aria-hidden="true">
           <Image
             ref={heroImageRef}
-            src="/assets/hq/services-hero.jpg"
+            src="/assets/workshop/home-hero.webp"
             alt=""
             fill
             priority
@@ -68,7 +68,7 @@ export default function Home() {
 
       <section className="proof" aria-label={t.homeProofLabel}>
         <div className="proof-item reveal">
-          <strong>26+</strong>
+          <strong>30+</strong>
           <span>{t.proofExperience}</span>
         </div>
         <div className="proof-item reveal">
@@ -104,8 +104,8 @@ export default function Home() {
       <section className="about section home-about">
         <div className="about-photo reveal">
           <Image
-            src="/assets/hq/homepage-experience.jpg"
-            alt={t.homeExperienceImageAlt}
+            src="/assets/workshop/home-workshop.webp"
+            alt={t.workshopExteriorAlt}
             fill
             sizes="(max-width: 820px) 100vw, 55vw"
           />

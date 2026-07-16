@@ -13,7 +13,7 @@ export default function AboutPage() {
         eyebrow={t.aboutPageEyebrow}
         title={t.aboutPageTitle}
         lead={t.aboutPageLead}
-        image="/assets/hq/slide2-hq.jpg"
+        image="/assets/workshop/home-hero.webp"
         alt={t.aboutHeroAlt}
         index="02"
       />
@@ -27,10 +27,10 @@ export default function AboutPage() {
         </div>
         <figure className="story-image reveal">
           <Image
-            src="/assets/hq/page2-img1-hq.jpg"
-            alt={t.aboutPortraitAlt}
-            width={1487}
-            height={1058}
+            src="/assets/workshop/about-history.webp"
+            alt={t.workbenchAlt}
+            width={1800}
+            height={1355}
             sizes="(max-width: 820px) 100vw, 45vw"
           />
           <figcaption>{t.aboutImageCaption}</figcaption>

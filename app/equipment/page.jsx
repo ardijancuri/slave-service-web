@@ -13,7 +13,7 @@ export default function EquipmentPage() {
         eyebrow={t.equipmentPageEyebrow}
         title={t.equipmentPageTitle}
         lead={t.equipmentPageLead}
-        image="/assets/hq/slide1-hq.jpg"
+        image="/assets/workshop/equipment-hero.webp"
         alt={t.equipmentAlt}
         index="03"
       />
@@ -33,10 +33,10 @@ export default function EquipmentPage() {
         </div>
         <figure className="equipment-figure reveal">
           <Image
-            src="/assets/hq/galery4-hq.jpg"
+            src="/assets/workshop/equipment-cr1100.webp"
             alt={t.equipmentAlt}
-            width={1511}
-            height={1041}
+            width={1800}
+            height={1355}
             sizes="(max-width: 820px) 100vw, 62vw"
           />
           <figcaption>
@@ -68,10 +68,10 @@ export default function EquipmentPage() {
       <section className="section equipment-proof">
         <Image
           className="reveal"
-          src="/assets/hq/galery2-hq.jpg"
+          src="/assets/workshop/equipment-precision.webp"
           alt={t.galleryAlt2}
-          width={1510}
-          height={1042}
+          width={1800}
+          height={1355}
           sizes="(max-width: 820px) 100vw, 50vw"
         />
         <div className="reveal">

@@ -6,14 +6,14 @@ import PageHero from "../../components/PageHero";
 import { useLanguage } from "../../components/LanguageProvider";
 
 const images = [
-  ["galery4-hq.jpg", "gallery1", "KOMTEST CR1100", 1511, 1041],
-  ["galery2-hq.jpg", "gallery2", "galleryAlt2", 1510, 1042],
-  ["galery3-hq.jpg", "gallery3", "galleryAlt3", 1512, 1040],
-  ["galery1-hq.jpg", "gallery4", "galleryAlt4", 1512, 1040],
-  ["komtest1-hq.jpg", "gallery5", "equipmentAlt", 1254, 1254],
-  ["komtest2-hq.jpg", "gallery6", "galleryAlt2", 1254, 1254],
-  ["komtest3-hq.jpg", "gallery7", "equipmentAlt", 1254, 1254],
-  ["servis2-hq.jpg", "gallery8", "workbenchAlt", 1592, 988],
+  ["gallery-cr1100.webp", "gallery1", "equipmentAlt", 1600, 2125],
+  ["gallery-precision-bench.webp", "gallery2", "galleryAlt2", 1800, 1355],
+  ["gallery-pumps.webp", "gallery3", "galleryAlt3", 1600, 2125],
+  ["gallery-classic-test-bench.webp", "gallery4", "galleryAlt4", 1800, 1355],
+  ["gallery-component-setup.webp", "gallery5", "equipmentAlt", 1600, 2125],
+  ["gallery-parameters.webp", "gallery6", "equipmentAlt", 1800, 1355],
+  ["gallery-manual-tester.webp", "gallery7", "galleryAlt4", 1600, 2125],
+  ["gallery-injectors.webp", "gallery8", "workbenchAlt", 1800, 1355],
 ];
 
 export default function GalleryPage() {
@@ -24,7 +24,7 @@ export default function GalleryPage() {
         eyebrow={t.galleryPageEyebrow}
         title={t.galleryPageTitle}
         lead={t.galleryPageLead}
-        image="/assets/hq/slide3-hq.jpg"
+        image="/assets/workshop/gallery-hero.webp"
         alt={t.workbenchAlt}
         index="04"
       />
@@ -39,7 +39,7 @@ export default function GalleryPage() {
         {images.map(([src, captionKey, altKey, width, height], index) => (
           <figure className="gallery-wall-item reveal" key={src}>
             <Image
-              src={`/assets/hq/${src}`}
+              src={`/assets/workshop/${src}`}
               alt={t[altKey] || altKey}
               width={width}
               height={height}

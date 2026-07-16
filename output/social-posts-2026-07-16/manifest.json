@@ -1,0 +1,153 @@
+{
+  "project": "Дизел Сервис Славе — Instagram/Facebook square posts",
+  "generatedAt": "2026-07-16T16:46:17.883Z",
+  "dimensions": {
+    "width": 1080,
+    "height": 1080,
+    "unit": "px",
+    "aspectRatio": "1:1"
+  },
+  "platforms": [
+    "Instagram",
+    "Facebook"
+  ],
+  "brand": {
+    "palette": {
+      "ink": "#121414",
+      "paper": "#EEECE6",
+      "paperDeep": "#DFDCD4",
+      "red": "#DF3F28",
+      "muted": "#777771",
+      "white": "#FFFFFF"
+    },
+    "logoSource": "C:\\Users\\PC\\Documents\\slabe-servis\\public\\assets\\dizel-servis-slave-logo.svg",
+    "fonts": [
+      "Roboto Condensed",
+      "IBM Plex Sans"
+    ],
+    "websiteSource": "C:\\Users\\PC\\Documents\\slabe-servis"
+  },
+  "contact": {
+    "phone1": "+389 70 476 287",
+    "phone2": "+389 71 398 355",
+    "email": "dizelservisslave@gmail.com",
+    "location": "ЧЕНТО · СКОПЈЕ",
+    "website": "dizelservisslave.com.mk"
+  },
+  "sourcePreservation": "All workshop imagery is user-supplied photography or a user-supplied cleaned replacement derived from it. Edits are limited to crop, resize, modest color correction, deterministic branded overlays, a cleaned KOMTEST replacement, a user-requested cleanup of the storefront foreground, a user-requested cleanup of loose wall-side cables in the injector photo, and a user-requested organization and cleanup of the BOSCH diagnostics bench. Storefront signage, architecture, vehicles, framing, equipment, labels, and functional hoses were preserved.",
+  "posts": [
+    {
+      "id": "01",
+      "slug": "01-precizna-dijagnostika",
+      "source": "PXL_20260716_122200040.jpg",
+      "title": "ПРЕЦИЗНА ДИЈАГНОСТИКА",
+      "purpose": "Brand and location introduction",
+      "layout": "storefront",
+      "sourceOverride": "C:\\Users\\PC\\Documents\\slabe-servis\\output\\social-posts-2026-07-16\\source-storefront-cleaned.png",
+      "originalSourcePath": "C:\\Users\\PC\\Downloads\\wetransfer_pxl_20260716_122223067-jpg_2026-07-16_1436\\PXL_20260716_122200040.jpg",
+      "sourcePath": "C:\\Users\\PC\\Documents\\slabe-servis\\output\\social-posts-2026-07-16\\source-storefront-cleaned.png",
+      "crop": {
+        "width": 952,
+        "height": 614,
+        "position": "centre"
+      },
+      "svgPath": "C:\\Users\\PC\\Documents\\slabe-servis\\output\\social-posts-2026-07-16\\01-precizna-dijagnostika.svg",
+      "pngPath": "C:\\Users\\PC\\Documents\\slabe-servis\\output\\social-posts-2026-07-16\\01-precizna-dijagnostika.png",
+      "dimensions": "1080x1080"
+    },
+    {
+      "id": "02",
+      "slug": "02-sigurna-popravka",
+      "source": "PXL_20260716_121400220.jpg",
+      "title": "ТОЧНА ДИЈАГНОСТИКА. ЈАСЕН РЕЗУЛТАТ.",
+      "purpose": "Precision diagnostic equipment",
+      "layout": "diagnostics",
+      "originalSourcePath": "C:\\Users\\PC\\Downloads\\wetransfer_pxl_20260716_122223067-jpg_2026-07-16_1436\\PXL_20260716_121400220.jpg",
+      "sourcePath": "C:\\Users\\PC\\Downloads\\wetransfer_pxl_20260716_122223067-jpg_2026-07-16_1436\\PXL_20260716_121400220.jpg",
+      "crop": {
+        "width": 952,
+        "height": 592,
+        "position": "centre"
+      },
+      "svgPath": "C:\\Users\\PC\\Documents\\slabe-servis\\output\\social-posts-2026-07-16\\02-sigurna-popravka.svg",
+      "pngPath": "C:\\Users\\PC\\Documents\\slabe-servis\\output\\social-posts-2026-07-16\\02-sigurna-popravka.png",
+      "dimensions": "1080x1080"
+    },
+    {
+      "id": "03",
+      "slug": "03-komtest-cr1100",
+      "source": "PXL_20260716_121704374.jpg",
+      "sourceOverride": "C:\\Users\\PC\\Documents\\slabe-servis\\output\\social-posts-2026-07-16\\source-komtest-cleaned.png",
+      "title": "KOMTEST CR1100",
+      "purpose": "Common rail testing capability",
+      "layout": "komtest",
+      "originalSourcePath": "C:\\Users\\PC\\Downloads\\wetransfer_pxl_20260716_122223067-jpg_2026-07-16_1436\\PXL_20260716_121704374.jpg",
+      "sourcePath": "C:\\Users\\PC\\Documents\\slabe-servis\\output\\social-posts-2026-07-16\\source-komtest-cleaned.png",
+      "crop": {
+        "width": 936,
+        "height": 566,
+        "position": "centre"
+      },
+      "svgPath": "C:\\Users\\PC\\Documents\\slabe-servis\\output\\social-posts-2026-07-16\\03-komtest-cr1100.svg",
+      "pngPath": "C:\\Users\\PC\\Documents\\slabe-servis\\output\\social-posts-2026-07-16\\03-komtest-cr1100.png",
+      "dimensions": "1080x1080"
+    },
+    {
+      "id": "04",
+      "slug": "04-elektronski-injektori",
+      "source": "PXL_20260716_121808912.jpg",
+      "sourceOverride": "C:\\Users\\PC\\Documents\\slabe-servis\\output\\social-posts-2026-07-16\\source-injectors-cables-cleaned.png",
+      "title": "ЕЛЕКТРОНСКИ ИНЈЕКТОРИ",
+      "purpose": "Injector repair and testing",
+      "layout": "injectors",
+      "originalSourcePath": "C:\\Users\\PC\\Downloads\\wetransfer_pxl_20260716_122223067-jpg_2026-07-16_1436\\PXL_20260716_121808912.jpg",
+      "sourcePath": "C:\\Users\\PC\\Documents\\slabe-servis\\output\\social-posts-2026-07-16\\source-injectors-cables-cleaned.png",
+      "crop": {
+        "width": 600,
+        "height": 1080,
+        "position": "right",
+        "shiftX": 48
+      },
+      "svgPath": "C:\\Users\\PC\\Documents\\slabe-servis\\output\\social-posts-2026-07-16\\04-elektronski-injektori.svg",
+      "pngPath": "C:\\Users\\PC\\Documents\\slabe-servis\\output\\social-posts-2026-07-16\\04-elektronski-injektori.png",
+      "dimensions": "1080x1080"
+    },
+    {
+      "id": "05",
+      "slug": "05-pumpi-visok-pritisok",
+      "source": "PXL_20260716_121846489.jpg",
+      "title": "ПУМПИ ЗА ВИСОК ПРИТИСОК",
+      "purpose": "High-pressure pump service",
+      "layout": "pumps",
+      "originalSourcePath": "C:\\Users\\PC\\Downloads\\wetransfer_pxl_20260716_122223067-jpg_2026-07-16_1436\\PXL_20260716_121846489.jpg",
+      "sourcePath": "C:\\Users\\PC\\Downloads\\wetransfer_pxl_20260716_122223067-jpg_2026-07-16_1436\\PXL_20260716_121846489.jpg",
+      "crop": {
+        "width": 650,
+        "height": 1080,
+        "position": "centre"
+      },
+      "svgPath": "C:\\Users\\PC\\Documents\\slabe-servis\\output\\social-posts-2026-07-16\\05-pumpi-visok-pritisok.svg",
+      "pngPath": "C:\\Users\\PC\\Documents\\slabe-servis\\output\\social-posts-2026-07-16\\05-pumpi-visok-pritisok.png",
+      "dimensions": "1080x1080"
+    },
+    {
+      "id": "06",
+      "slug": "06-kompjuterska-dijagnostika",
+      "source": "PXL_20260716_122024763.jpg",
+      "sourceOverride": "C:\\Users\\PC\\Documents\\slabe-servis\\output\\social-posts-2026-07-16\\source-bosch-diagnostics-cleaned.png",
+      "title": "КОМПЈУТЕРСКА ДИЈАГНОСТИКА",
+      "purpose": "BOSCH computer diagnostics",
+      "layout": "bosch",
+      "originalSourcePath": "C:\\Users\\PC\\Downloads\\wetransfer_pxl_20260716_122223067-jpg_2026-07-16_1436\\PXL_20260716_122024763.jpg",
+      "sourcePath": "C:\\Users\\PC\\Documents\\slabe-servis\\output\\social-posts-2026-07-16\\source-bosch-diagnostics-cleaned.png",
+      "crop": {
+        "width": 952,
+        "height": 594,
+        "position": "centre"
+      },
+      "svgPath": "C:\\Users\\PC\\Documents\\slabe-servis\\output\\social-posts-2026-07-16\\06-kompjuterska-dijagnostika.svg",
+      "pngPath": "C:\\Users\\PC\\Documents\\slabe-servis\\output\\social-posts-2026-07-16\\06-kompjuterska-dijagnostika.png",
+      "dimensions": "1080x1080"
+    }
+  ]
+}

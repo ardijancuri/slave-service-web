@@ -17,8 +17,8 @@ export default function ContactPage() {
         eyebrow={t.contactPageEyebrow}
         title={t.contactPageTitle}
         lead={t.contactPageLead}
-        image="/assets/hq/slide2-hq.jpg"
-        alt={t.aboutHeroAlt}
+        image="/assets/workshop/home-workshop.webp"
+        alt={t.workshopExteriorAlt}
         index="05"
       />
 
