@@ -24,7 +24,7 @@ export default function GalleryPage() {
         eyebrow={t.galleryPageEyebrow}
         title={t.galleryPageTitle}
         lead={t.galleryPageLead}
-        image="/assets/workshop/gallery-hero.webp"
+        image="/assets/workshop/gallery-hero-clean.webp"
         alt={t.workbenchAlt}
         index="04"
       />
