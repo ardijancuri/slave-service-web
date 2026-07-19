@@ -20,7 +20,11 @@ const socialLinks = [
     href: "https://www.facebook.com/share/1AiRnJySL4/?mibextid=wwXIfr",
     Icon: FaFacebookF,
   },
-  { label: "Instagram", href: "", Icon: FaInstagram },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/dizel_servis_slave/",
+    Icon: FaInstagram,
+  },
 ];
 
 function Brand({ footer = false }) {
