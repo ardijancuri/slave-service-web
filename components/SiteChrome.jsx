@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { FaFacebookF, FaInstagram } from "react-icons/fa6";
+import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa6";
 import { useLanguage } from "./LanguageProvider";
 
 const navigation = [
@@ -24,6 +24,11 @@ const socialLinks = [
     label: "Instagram",
     href: "https://www.instagram.com/dizel_servis_slave/",
     Icon: FaInstagram,
+  },
+  {
+    label: "TikTok",
+    href: "https://www.tiktok.com/@dieselserviceslave",
+    Icon: FaTiktok,
   },
 ];
 
